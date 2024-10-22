@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Calculate Your Age Easily</title>
+    <meta name="description" content="With age calculator, you can easily calculate your age accurately in years, months, weeks, days, hours, minutes, and seconds.">
+    <link rel="stylesheet" href="style.css">
+    <meta name="keywords" content="age calculator, calculate age, age in years, age in months, age in weeks, age in days, age in hours, age in minutes, age in seconds">
+    <meta name="author" content="Avinash Kamthe">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Age Calculator - Calculate Your Age Easily">
+    <meta property="og:description" content="With age calculator, you can easily calculate your age accurately in years, months, weeks, days, hours, minutes, and seconds.">
+    <meta property="og:image" content="https://avinashkamthe24.github.io/age-calculator/images/agecalculator.png">
+    <meta property="og:url" content="https://avinashkamthe24.github.io/age-calculator/">
+    <meta property="og:type" content="website">
+    <link rel="icon" type="image/x-icon" href="https://avinashkamthe24.github.io/age-calculator/images/agecalculator.ico">
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebApplication",
+          "name": "Age Calculator",
+          "description": "With age calculator, you can easily calculate your age accurately in years, months, weeks, days, hours, minutes, and seconds.",
+          "image": "https://avinashkamthe24.github.io/age-calculator/images/agecalculator.png",
+          "url": "https://avinashkamthe24.github.io/age-calculator/",
+          "applicationCategory": "Education",
+          "operatingSystem": "Web"
+        }
+        </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Introduction Section -->
+        <section class="intro">
+            <h1>Age Calculator</h1>
+            <p>Our age calculator is a simple and convenient tool that helps you determine your age accurately in years, months, weeks, days, hours, minutes, and even seconds! It’s perfect for finding out the details of how old you are, or how much time has passed since a specific date of birth.</p>
+        </section>
+
+        <!-- Age Calculator Form -->
+        <div class="calculator-card">
+            <h2>Age Calculator </h2>
+            <form id="ageCalculatorForm">
+                <label for="dob">Enter your date of birth:</label>
+                <input type="date" id="dob" required>
+                <div class="button-group">
+                    <button type="submit">Calculate Age</button>
+                    <button type="button" id="clearButton">Clear</button>
+                </div>
+            </form>
+            <div id="result" class="result" style="display: none;"></div>
+        </div>
+
+        <!-- Result Div -->
+        <div id="result" class="result" style="display: none;"></div>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <h1>What is an Age Calculator?</h1>
+                <p>
+                    An <strong>Age Calculator</strong> is a tool that helps users determine their age or the age of someone else based on a given date of birth (DOB). This tool calculates not only the age in years but can also provide additional information, such as age in months, weeks, days, hours, minutes, and seconds. It is commonly used for various purposes, including:
+                </p>
+                <ul>
+                    <li>Determining eligibility for certain activities (e.g., driving, voting).</li>
+                    <li>Understanding age-related milestones.</li>
+                    <li>Planning events based on age.</li>
+                    <li>Keeping track of important dates and anniversaries.</li>
+                </ul>
+
+                <h4>How to Use the Age Calculator</h4>
+                    <ol>
+                    <li>Enter your date of birth in the format MM/DD/YYYY.</li>
+                    <li>Click the "Calculate Age" button.</li>
+                    <li>The calculator will display your age in years, months, and days.</li>
+                    <li>You can also view your age in different units, such as weeks, months, and years.</li>
+                    </ol>                
+                <h4>Example</h4>
+                <p>
+                    Let’s say you were born on <strong>April 15, 1990</strong>.
+                </p>
+                <ol>
+                    <li>In the age calculator, you would select or enter "1990-04-15" in the date picker.</li>
+                    <li>After entering the date, click the "Calculate" button.</li>
+                    <li>The calculator will display your age details based on the current date (let’s assume today is October 22, 2024). The output may look something like this:</li>
+                </ol>
+                <pre>
+                    Age Details - 34 years 6 months 7 days
+                    In Months: 414 months
+                    In Weeks: 1801 weeks
+                    In Days: 12,609 days
+                    In Hours: 302,616 hours
+                    In Minutes: 18,156,960 minutes
+                    In Seconds: 1,089,417,600 seconds
+                </pre>
+            <h3>Frequently Asked Questions (FAQ)</h3>
+            
+            <h3>Why Use an Age Calculator?</h3>
+            <p>Using an age calculator can help you:
+                <ul>
+                    <li>Quickly find out how old you are in exact terms.</li>
+                    <li>Understand detailed breakdowns of age in years, months, days, weeks, and more.</li>
+                    <li>Track how much time has passed since a certain event or birthday.</li>
+                </ul>
+            </p>
+
+            <h3>How to Use the Age Calculator?</h3>
+            <p>Simply enter your date of birth in the provided input field and click the "Calculate Age" button. The calculator will instantly show your exact age in years, months, and days. You can also see other breakdowns like total weeks, days, hours, minutes, and seconds since your birth.</p>
+
+            <h3>Can I calculate someone else’s age?</h3>
+            <p>Yes, you can use this age calculator to calculate the age of anyone as long as you have their date of birth.</p>
+
+            <h3>Is my data secure?</h3>
+            <p>Yes, this calculator does not store any personal information. The date of birth is used only for instant calculation and is not saved or transmitted.</p>
+            <h4>Conclusion</h4>
+            <p>
+                Age calculators are user-friendly tools that provide a quick and efficient way to determine your age and understand how time has passed since your birth. Whether you need this information for personal use or for planning events, an age calculator is a handy tool to have at your disposal.
+            </p>
+            <p>
+                Feel free to try out the age calculator by entering your date of birth and exploring the different age formats!
+            </p>
+        </section>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

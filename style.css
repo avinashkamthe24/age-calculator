@@ -1,0 +1,171 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Introduction Section */
+.intro {
+    margin-bottom: 40px;
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Card-like Design for Calculator Form */
+.calculator-card {
+    background-color: aliceblue;
+    max-width: 500px;
+    padding: 0px 25px 25px 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+    border: 1px solid #0056b3;
+}
+
+.calculator-card h2 {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.6em;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.2); /* Light overlay for heading */
+    padding: 10px;
+    border-radius: 5px; /* Slightly rounded corners for heading */
+}
+
+/* Form Section */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Aligns form items to the left */
+    gap: 15px;
+    width: 100%;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    }
+
+input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="date"]:focus {
+    border-color: #fff; /* Change border color to white on focus */
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #0056b3; /* Darker blue for buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004494; /* Even darker blue on hover */
+}
+
+button#clearButton {
+    background-color: #dc3545; /* Red for clear button */
+}
+
+button#clearButton:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+/* Result Section */
+#result {
+    max-width: 500px;
+    margin: 30px auto 10px auto;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    text-align: left;
+    font-size: 1.1em;
+}
+
+/* FAQ Section */
+.faq {
+    margin-top: 40px;
+}
+
+.faq h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    text-align: left;
+}
+
+.faq h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.faq p, .faq ul {
+    color: #555;
+    text-align: left;
+    line-height: 1.6;
+}
+
+.faq ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    input[type="date"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .button-group {
+        flex-direction: column;
+        width: 100%;
+    }
+}
